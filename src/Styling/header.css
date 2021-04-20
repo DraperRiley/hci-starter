@@ -1,0 +1,41 @@
+
+.header-container
+{
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-family: Open Sans;
+}
+
+.header-logout-block,
+.header-logo,
+.header-avatar
+{
+    
+    display: inline-block;
+    
+}
+
+.header-logout-block,
+.header-avatar
+{
+    padding-right: 30px;
+    float: right;
+    margin-right: 10px;
+}
+
+.header-help button
+{
+    border: none;
+    background: none;
+    padding-left: 0px;
+    text-decoration: underline;
+    color: rgb(90, 3, 90);
+}
+
+.header-help button:hover
+{
+    cursor: pointer;
+}
