@@ -10,7 +10,6 @@ const SecondPage = () => (
   <>
   <Layout />
     <SEO title="My Degrees" />
-    <h1>My Degrees</h1>
     <DegreeTable />
   </>
 )
