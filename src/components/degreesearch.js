@@ -1,15 +1,25 @@
 import React, { Component } from 'react'
 import '../Styling/degreesearch.css'
+import './degreesearchtable'
+import DegreeSearchTable from './degreesearchtable'
 
 class DegreeSearch extends Component {
 
     constructor (props) {
         super(props)
+
+        this.state = {
+            showComponent: false,
+        }
+
     }
 
     render () {
 
         return(
+
+            <>
+
             <div class='search-form-container'>
                 <div class='search-form'>
                 <form>
@@ -58,13 +68,26 @@ class DegreeSearch extends Component {
 
                     <br/>
 
-                    <button type="button" class='degree-search-button'>Search</button>
+                    <button type="button" class='degree-search-button' onClick={() => this.handleClick()}>Search</button>
 
                 </form>
                 </div>
+
+                
+
             </div>
+
+            <div>
+                {this.state.showComponent ? <DegreeSearchTable /> : null }
+            </div>
+            
+            </>
         )
 
+    }
+
+    handleClick (){
+        this.setState({showComponent: !this.state.showComponent})
     }
 
 }

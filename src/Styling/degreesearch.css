@@ -23,7 +23,11 @@ button.degree-search-button{
     background-color: #9d1b1d;
     color: #f5f5f5;
     border-radius: 15px;
+}
 
+button.degree-search-button:hover{
+    background-color: #5a0c0e;
+    cursor: pointer;
 }
 
 .search-top label{

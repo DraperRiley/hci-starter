@@ -1,0 +1,53 @@
+.degree-search-container{
+    border-style: solid;
+    border-radius: 15px;
+    padding-bottom: 90px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color: #9d1b1d;    
+}
+
+#search-degree-table {
+    text-align: center;
+    font-family: Open Sans;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+#search-degree-table td, #search-degree-table th{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#search-degree-table tr:nth-child(even) {
+    background-color: #b1b1b1;
+}
+
+#search-degree-table tr:hover {
+    background-color: #ddd;
+}
+
+#search-degree-table th {
+    text-align: center;
+    background-color: #9d1b1d;
+    color: #f5f5f5;
+}
+
+button.button-audit{
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #9d1b1d;
+    color: #f5f5f5;
+    border-radius: 15px;
+}
+
+button.button-audit:hover{
+    background-color: #5a0c0e;
+    cursor: pointer;
+}

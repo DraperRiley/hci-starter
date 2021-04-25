@@ -7,8 +7,9 @@ class DegreeTable extends Component {
         super(props)
 
         this.state = {
+            showComponent: false,
             degrees: [
-                { code: 'B235', name: 'Computer Science', credits: 120.00, startterm: '2019Su', audit: <button class='audit-button'>Audit</button> }
+                { code: 'B235', name: 'Computer Science', credits: 120.00, startterm: '2019Su', audit: <button class='audit-button' onClick={() => this.handleClickEvent()}>Audit</button> }
             ]
         }
 
@@ -38,16 +39,28 @@ class DegreeTable extends Component {
 
     render() {
         return(
-        <div class='degree-container'>
-            <h1 id='title'>My Degrees</h1>
-            <table id='degrees'>
-                <tbody>
-                    <tr>{this.renderTableHeader()}</tr>
-                    {this.renderTableData()}
-                </tbody>
-            </table>
-        </div>
+        
+        <>
+            <div class='degree-container'>
+                <h1 id='title'>My Degrees</h1>
+                <table id='degrees'>
+                    <tbody>
+                        <tr>{this.renderTableHeader()}</tr>
+                        {this.renderTableData()}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class='requirements'>
+                {this.state.showComponent ? <h1>big poopa</h1> : null}
+            </div>
+        </>
+
         )
+    }
+
+    handleClickEvent () {
+        this.setState({showComponent: !this.state.showComponent})
     }
 
 }
