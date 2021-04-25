@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../Styling/notestable.css'
 
 class NotesTable extends Component {
 
