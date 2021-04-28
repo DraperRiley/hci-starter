@@ -52,7 +52,7 @@ class DegreeTable extends Component {
             </div>
 
             <div class='requirements'>
-                {this.state.showComponent ? <h1>big poopa</h1> : null}
+                {this.state.showComponent ? <h1>TODO</h1> : null}
             </div>
         </>
 
