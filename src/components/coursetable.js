@@ -8,8 +8,8 @@ class CourseTable extends Component {
         this.state = {
 
             courses: [
-                { code: 'CS3323', title: 'Principles of Programming Languages', term: "2022Sp", credits: 3, remove: <button class="remove-button">Remove</button> },
-                { code: 'CS3823', title: 'Computational Theory', term: "2022Sp", credits: 3, remove: <button class="remove-button">Remove</button> }
+                { code: 'CS4513', title: 'Database Management Systems', term: "2022Sp", credits: 3, remove: <button class="remove-button">Remove</button> },
+                { code: 'CS4273', title: 'Capstone Design Project', term: "2022Sp", credits: 3, remove: <button class="remove-button">Remove</button> }
             ]
 
         }
