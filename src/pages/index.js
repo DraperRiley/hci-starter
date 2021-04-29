@@ -26,8 +26,8 @@ const IndexPage = () => (
                 <div id="labelEmailInvalid" class="box__form__label box__form__label--email box__form__label--invalid">Oops! OU Email or OUNetID is required.</div>
                 <div id="labelPasswordFocusActive" class="box__form__label box__form__label--password box__form__label--focus">Password</div>
                 <div id="labelPasswordInvalid" class="box__form__label box__form__label--password box__form__label--invalid">Oops! Password is required.</div>
-                <input id="ou-email" name="pf.username" class="textbox textbox--gray" type="text" placeholder="OU Email or OUNetID" title="Email" required autofocus/>
-                <input id="ou-password" name="pf.pass" class="textbox textbox--gray" type="password" placeholder="Password" title="Password" required/>
+                <input id="ou-email" name="pf.username" class="textbox textbox--gray" type="text" placeholder="OU Email or OUNetID" title="Email" required autofocus disabled/>
+                <input id="ou-password" name="pf.pass" class="textbox textbox--gray" type="password" placeholder="Password" title="Password" required disabled/>
                 <Link class="button button--blue" to="/page-2/" type="button" value="Sign In" title="submit" >Sign In</Link>	
               </form>
 
