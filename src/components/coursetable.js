@@ -3,10 +3,12 @@ import "../Styling/coursetable.css"
 
 class CourseTable extends Component {
 
+    //this is the contructor, which sets the state of our component
     constructor(props) {
         super(props)
         this.state = {
 
+            //these are objects which represent courses
             courses: [
                 { code: 'CS4513', title: 'Database Management Systems', term: "2022Sp", credits: 3, remove: <button class="remove-button">Remove</button> },
                 { code: 'CS4273', title: 'Capstone Design Project', term: "2022Sp", credits: 3, remove: <button class="remove-button">Remove</button> }
@@ -15,6 +17,7 @@ class CourseTable extends Component {
         }
     }
 
+    //this iterates through the courses objects and creates table data
     renderTableData() {
         return this.state.courses.map((course, index) => {
             const { code, title, term, credits, remove } = course
@@ -30,6 +33,7 @@ class CourseTable extends Component {
         })
     }
 
+    //this renders our table header with titles for columns
     renderTableHeader() {
         let header = Object.keys(this.state.courses[0])
         return header.map((course, index) => {
@@ -37,6 +41,7 @@ class CourseTable extends Component {
         })
     }
 
+    //the render method which returns the full table
     render () {
         return (
             <div class="plan-container">

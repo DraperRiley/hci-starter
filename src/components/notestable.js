@@ -6,6 +6,7 @@ class NotesTable extends Component {
     constructor(props){
         super(props)
 
+        //state containing a notes object
         this.state = {
             notes: [
                 { from: 'Person One', subject: 'Fall 2020 Enrollment Advising', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -17,6 +18,7 @@ class NotesTable extends Component {
 
     }
 
+    //render the data in the notes object
     renderTableData() {
         return this.state.notes.map((degree, index) => {
             const { from, subject, body, createddate, reply } = degree
@@ -32,6 +34,7 @@ class NotesTable extends Component {
         })
     }
 
+    //render the header for the notes table
     renderTableHeader() {
         let header = Object.keys(this.state.notes[0])
         return header.map((note, index) => {
@@ -39,6 +42,7 @@ class NotesTable extends Component {
         })
     }
 
+    //render the entire table
     render() {
         return(
         <div class='notes-container'>

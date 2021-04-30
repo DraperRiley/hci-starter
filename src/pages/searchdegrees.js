@@ -5,12 +5,12 @@ import SEO from "../components/seo"
 import "../components/degreesearch"
 import DegreeSearch from "../components/degreesearch"
 
+//The Search Degrees page
 const searchDegrees = () => (
       
       <>
         <Layout />
         <SEO title="Course Plan" />
-        <h1>Search Degrees</h1>
         <DegreeSearch />
       </>
     

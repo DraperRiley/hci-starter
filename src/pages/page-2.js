@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import "../components/degreetable"
 import DegreeTable from "../components/degreetable"
 
+//The degree audit page
 const SecondPage = () => (
   <>
   <Layout />

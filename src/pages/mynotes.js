@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import "../components/notestable"
 import NotesTable from "../components/notestable"
 
+//The My Notes page
 const myNotes = () => (
     <>
     <Layout />

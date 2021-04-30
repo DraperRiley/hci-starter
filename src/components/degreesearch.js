@@ -5,9 +5,11 @@ import DegreeSearchTable from './degreesearchtable'
 
 class DegreeSearch extends Component {
 
+    //the constructor for this component 
     constructor (props) {
         super(props)
 
+        //this state keep track of whether the search button has been clicked and displays the table accordingly
         this.state = {
             showComponent: false,
         }
@@ -21,6 +23,7 @@ class DegreeSearch extends Component {
             <>
 
             <div class='search-form-container'>
+            <h1 id='title'>Search Degrees</h1>
                 <div class='search-form'>
                 <form>
                     
@@ -86,6 +89,7 @@ class DegreeSearch extends Component {
 
     }
 
+    //click handler
     handleClick (){
         this.setState({showComponent: !this.state.showComponent})
     }

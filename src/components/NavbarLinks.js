@@ -5,6 +5,7 @@ import "@fontsource/open-sans"
 
 const NavbarLinks = () => {
 
+    //these are the actual links contained in the navbar
     return(
         <div class="navbar-link">
             <Link to="/mycourseplan">My Course Plan</Link>

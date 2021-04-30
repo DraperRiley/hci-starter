@@ -13,6 +13,7 @@ import Header from "./header"
 import "./layout.css"
 import Navbar from "./Navbar"
 
+//this is the layout provided by the gatsby default starter, it only holds the navbar which we created
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

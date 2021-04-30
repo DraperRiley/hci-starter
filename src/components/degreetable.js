@@ -9,6 +9,7 @@ class DegreeTable extends Component {
     constructor(props){
         super(props)
 
+        //has two states for each of the degrees, as well as the two degrees
         this.state = {
             showComponent: false,
             showComponent2: false,
@@ -21,6 +22,7 @@ class DegreeTable extends Component {
 
     }
 
+    //iterate through the degrees object and create data
     renderTableData() {
         return this.state.degrees.map((degree, index) => {
             const { code, name, credits, startterm, audit } = degree
@@ -36,6 +38,7 @@ class DegreeTable extends Component {
         })
     }
 
+    //render table header
     renderTableHeader() {
         let header = Object.keys(this.state.degrees[0])
         return header.map((degree, index) => {
@@ -43,6 +46,7 @@ class DegreeTable extends Component {
         })
     }
 
+    //render full table
     render() {
         return(
         
@@ -66,11 +70,13 @@ class DegreeTable extends Component {
         )
     }
 
+    //handle click event for the first button
     handleClickEvent () {
         this.setState({showComponent2: false})
         this.setState({showComponent: !this.state.showComponent})
     }
 
+    //handle click event for second button
     handleClickEvent2 () {
         this.setState({showComponent: false})
         this.setState({showComponent2: !this.state.showComponent2})

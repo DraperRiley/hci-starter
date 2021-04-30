@@ -7,6 +7,7 @@ class DegreeSearchTable extends Component {
         super(props)
         this.state = {
 
+            //degrees which will appear in the search table
             degrees: [
                 {code: 'A225', name: 'Computer Engineering/Computer Science Accelerated UNDERGRADUATE', startterm: '2002Su', audit: <button class='button-audit'>Audit</button>},
                 {code: 'A225', name: 'Computer Engineering/Computer Science Accelerated UNDERGRADUATE', startterm: '2003Su', audit: <button class='button-audit'>Audit</button>},
@@ -23,6 +24,7 @@ class DegreeSearchTable extends Component {
         }
     }
 
+    //render the table data for each degree in the degrees object
     renderTableData() {
         return this.state.degrees.map((degree, index) => {
             const { code, name, startterm, audit } = degree
@@ -37,6 +39,7 @@ class DegreeSearchTable extends Component {
         })
     }
 
+    //render table header
     renderTableHeader() {
         let header = Object.keys(this.state.degrees[0])
         return header.map((degree, index) => {
@@ -44,6 +47,7 @@ class DegreeSearchTable extends Component {
         })
     }
 
+    //render final table
     render () {
         return (
             <div class="degree-search-container">

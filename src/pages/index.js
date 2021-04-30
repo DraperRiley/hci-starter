@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+//this is the SSO sign on from OU
 const IndexPage = () => (
 
   <div class="sso-component">

@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "../Styling/header.css"
 
+//this is a header that is included with the gatsby starter. It is not really used
 const Header = ({ siteTitle }) => (
   <header>
     

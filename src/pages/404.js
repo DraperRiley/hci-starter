@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+//404 page which comes with the gatsby starter
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
